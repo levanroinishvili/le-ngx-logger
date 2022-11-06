@@ -1,10 +1,13 @@
 # LeNgxLogger
 
-Automatically log any combination of HTTP Errors, JavaScript Errors and calls to selected commands (such as console.error).
+In Angular projects, automatically log any combination of HTTP Errors, JavaScript Errors and calls to selected commands (such as console.error).
 
 Also, these can be separately enabled for development and production environments.
 
 Debug mode can also be separately enabled for development and production environments.
+
+# GitHub Home
+See the [source code](https://github.com/levanroinishvili/le-ngx-logger) on GitHub
 
 # Installing
 `npm install le-ngx-logger`
