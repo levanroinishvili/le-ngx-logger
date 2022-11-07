@@ -11,10 +11,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-
-    // import before HttpClientModule
     AppLoggerModule,
-
     HttpClientModule,
   ],
   providers: [],

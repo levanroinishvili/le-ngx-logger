@@ -1,6 +1,8 @@
 # LeNgxLogger
 
-In Angular projects, automatically log any combination of HTTP Errors, JavaScript Errors and calls to selected commands (such as console.error).
+In Angular projects, automatically send logs to the specificized Back-End endpoint.
+Logger can be configured to log any combination of HTTP Errors, JavaScript Errors,
+as well calls to selected commands (such as `console.error()`).
 
 For more details, see [README.md](projects/le-ngx-logger/README.md) for the corresponding library.
 

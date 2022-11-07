@@ -8,8 +8,8 @@ export const LE_NGX_SERVICE_DEFAULT_CONFIG: LeNgxLoggerFullConfig = {
     report: {
 
         // If false, overrides other settings and disables all reporting on development or production environment
-        onDev: false,
-        onProd: false,
+        onDev: true,
+        onProd: true,
 
         httpErrors: true, // Report http calls via HttpClient module
         jsErrors: true, // Report JavaScript runtime errors
@@ -21,7 +21,7 @@ export const LE_NGX_SERVICE_DEFAULT_CONFIG: LeNgxLoggerFullConfig = {
 
     delay: 0, // Milliseconds - Delay report after error
 
-    // HTTP Header will be added to the API call carrying an error report
+    // HTTP Headers will be added to the API call carrying an error report
     httpHeaders: {
         'Logger-Report': 'Le-Ngx-Logger'
     },
@@ -29,7 +29,7 @@ export const LE_NGX_SERVICE_DEFAULT_CONFIG: LeNgxLoggerFullConfig = {
     reportingFailureMessage: 'Could not send log to server',
 
     debug: {
-        onDev: false,
+        onDev: true,
         onProd: false,
     }
 }
