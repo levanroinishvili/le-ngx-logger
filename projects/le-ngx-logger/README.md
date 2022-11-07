@@ -2,10 +2,10 @@
 
 In Angular projects, automatically send logs to the specificized Back-End endpoint.
 Logger can be configured to log any combination of HTTP Errors, JavaScript Errors,
-as well calls to selected commands (such as `console.error()`).
+as well as calls to selected commands (such as `console.error()`).
 
-These can be separately enabled for development and production environments.
-Debug mode can also be enabled for the either environment.
+Each of these options can be separately enabled for development and production environments.
+Similarly, Debug mode can be enabled separately for each environment.
 (see [Format of the Configuration Object](#format-of-the-configuration-object) for details).
 
 ## Contents
@@ -27,6 +27,12 @@ See the [source code](https://github.com/levanroinishvili/le-ngx-logger) on GitH
 ## Usage
 ### Importing Into The Application
 `LeNgxLoggerModule` should be imported into the main `app.module.ts` with the configuration object.
+
+See [Format of the Configuration Object](#format-of-the-configuration-object) for details how to build the Configuration Object.
+Once created, the object can be supplied into the Logger using one of the two options:
+
+    * [Using `.forRoot()` Option](#forroot-option)
+    * [Providing `LE_NGX_LOGGER_CONFIG`](#providing-le_ngx_logger_config)
 
 ### Format of the Configuration Object
 
