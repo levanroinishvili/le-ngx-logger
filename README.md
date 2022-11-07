@@ -18,3 +18,4 @@ See the [npm package](https://www.npmjs.com/package/le-ngx-logger) on npm regist
 ## Build
 
 Run `ng build le-ngx-logger` to build the library. The build artifacts will be stored in the `dist/` directory.
+Then, optionally, run `ng build test` to build the tester application
